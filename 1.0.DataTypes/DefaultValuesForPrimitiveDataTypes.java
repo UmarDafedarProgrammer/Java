@@ -32,5 +32,12 @@ public class DataTypes {
 
 /*
   OUTPUT:
-  
+boolean b holds the value false
+byte by holds the value 0
+Character c holds the value 
+short s holds the value 0
+Integer i holds the value 0
+Long ll holds the value 0
+float f holds the value 0.0
+double d holds the value 0.0
 */
