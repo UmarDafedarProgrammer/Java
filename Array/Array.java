@@ -32,7 +32,7 @@ public class Array {
 		
 		int MyArray[]; //declaration
 
-//		int j; local variable has to be initialize before use
+//		int j; local variable has to be initialized before use
 		
 		MyArray=new int[10];
 		
