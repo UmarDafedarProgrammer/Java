@@ -14,6 +14,7 @@ public class ArrayClass{
 	  Myarray=RightRotateElementOfAnArray(Myarray,6);
 	  PrintArray(Myarray);
 	  PrintSmallAndLargeNumber(Myarray);
+	  Frequency(Myarray);
   
   }
   
@@ -96,5 +97,29 @@ public class ArrayClass{
 	  }
 	  System.out.println("Smallest element : "+small);
 	  System.out.println("Largest Element :"+large);
+  }
+  
+  public static void Frequency(int[] numbers)
+  {
+    int [] frequency = new int [numbers.length];
+	    int counted = -1;
+	    for(int i = 0; i < numbers.length; i++){
+	      int count = 1;
+	      for(int j = i+1; j < numbers.length; j++){
+	        if(numbers[i] == numbers[j]){
+	          count++;
+	          //To avoid counting the frequency of same element again
+	          frequency[j] = counted;
+	        }
+	      }
+	      if(frequency[i] != counted)
+	        frequency[i] = count;
+	    }
+
+	    //Printing the frequency of each element
+	    for(int i = 0; i < frequency.length; i++){
+	      if(frequency[i] != counted)
+	        System.out.println("Element: "+numbers[i] + " Frequency: " + frequency[i]);
+  }
   }
 }
