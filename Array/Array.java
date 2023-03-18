@@ -18,6 +18,7 @@
  			int[] number; 
 			int []number;  
 			int number[];
+			int [] number;
  		
  			int[][] arr; 
 			int [][]arr;
