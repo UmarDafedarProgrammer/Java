@@ -20,5 +20,27 @@ public class MultiDimenstionalArray{
    }
    System.out.println();
    
+   int Grades[][];
+   Grades= new int[3][3];
+   
+   int init=87;
+   
+   for(int i=0;i<Grades.length;i++)
+   {
+	   for(int j=0;j<Grades[0].length;j++)
+	   {
+		   Grades[i][j]=init+i+j;
+	   }
+   }
+   
+   for(int i=0;i<Grades.length;i++)
+   {
+	   for(int j=0;j<Grades[0].length;j++)
+	   {
+		   System.out.print(Grades[i][j]+" ");
+	   }
+	   System.out.println();
+   }
+   System.out.println();
   }
 }
