@@ -17,3 +17,10 @@ public class MultiplyTwoNumbers {
 	}
 
 }
+
+/*
+OUTPUT:
+Enter the value of a1: 10
+Enter the value of a2: 20
+Product of 10 and 20 is 200
+*/
