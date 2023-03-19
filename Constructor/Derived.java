@@ -12,7 +12,7 @@ public class Derived extends Base {
 	
 	Derived(int i,String s)
 	{
-		super(i,s);
+		super(i,s); // to make a call to the particular version of the base class constructor
 		System.out.println("Derived Class Parameterised constructor is called");
 		di=i;
 		dstr=s;
