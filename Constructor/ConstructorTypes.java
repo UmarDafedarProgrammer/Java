@@ -7,7 +7,7 @@ package dataTypes;
  There are three types of constructors
  1. Default constructor
  		Compiler generates a empty constructor with no input arguments
- 		If user implements any of the constructor, then compiler does not generates a default constructor
+ 		If user provides any of the constructor, then compiler does not generates a default constructor
  2. no-arg constructor
  		User provided constructor without any input arguments
  3. Parameterized constructor
@@ -24,6 +24,9 @@ public class ConstructorTypes {
 		ConstructorTypes obj;//Declaration
 		obj = new ConstructorTypes(); // Instantiation, default constructor is called
 		obj.Display();
+		
+		ConstructorTypes obj_new = new ConstructorTypes(101);
+		obj_new.Display();
 	}
 	
 	ConstructorTypes(int j)
